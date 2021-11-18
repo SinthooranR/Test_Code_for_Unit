@@ -1,0 +1,81 @@
+.LineItem {
+  height: "20vh";
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+  img {
+    height: 300px;
+    width: 500px;
+  }
+  .ItemInfo {
+    div {
+      display: flex;
+      justify-content: flex-start;
+      span {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      h5 {
+        margin: 0.25rem 0 0.5rem 0.5rem;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+  .PriceContainer {
+    text-align: right;
+    h4,
+    h5 {
+      font-weight: 500;
+    }
+    span {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 5rem;
+      h5 {
+        margin: 0 0.15rem;
+      }
+    }
+    p {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .LineItem {
+    img {
+      height: 200px;
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .LineItem {
+    flex-direction: column;
+    justify-content: center;
+    img {
+      margin: 0 auto;
+      height: 200px;
+      width: 300px;
+    }
+    .ItemInfo {
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .PriceContainer {
+      text-align: center;
+      span {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+}
